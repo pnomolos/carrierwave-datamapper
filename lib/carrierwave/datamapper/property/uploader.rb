@@ -16,6 +16,9 @@ module CarrierWave
 
           super
         end
+        
+        private
+        def typecast_to_primitive(value); value; end
       end
     end # Property
   end # DataMapper
